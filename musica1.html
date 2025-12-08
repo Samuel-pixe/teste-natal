@@ -28,15 +28,25 @@
             margin-bottom: 30px;
         }
 
-        .back-link {
-            text-decoration: none;
-            color: #b30000;
-            font-size: 1.1rem;
-        }
+        .nav-buttons {
+			display: flex;
+			justify-content: space-between; /* um em cada canto */
+			align-items: center;
+			margin-top: 20px;
+		}
 
-        .back-link:hover {
-            text-decoration: underline;
-        }
+		.back-link, .next-link {
+			text-decoration: none;
+			color: #b30000;
+			font-size: 1.1rem;
+			font-weight: bold;
+		}
+
+		.back-link:hover,
+		.next-link:hover {
+			text-decoration: underline;
+		}
+
     </style>
 </head>
 <body>
@@ -44,7 +54,7 @@
     <div class="container">
         <div class="content-frame">
             
-            <h1>Noite feliz</h1>
+            <h1>Musica 1: Noite feliz</h1>
 
             <p style="text-align: center;">
                 Noite feliz, noite feliz
@@ -82,13 +92,14 @@
 				E a nós todos salvar
 				E a nós todos salvar
             </p>
-
-            <a href="index.html" class="back-link">⬅ Voltar</a>
+			
+			<div class="nav-buttons">
+				<a href="index.html" class="back-link">⬅ Voltar</a>
+				<a href="musica2.html" class="next-link">Próxima ➜</a>
+			</div>
 
         </div>
     </div>
 
 </body>
 </html>
-
-
